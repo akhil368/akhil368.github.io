@@ -1,6 +1,6 @@
- [Portfolio](https://akhil368.github.io)
+ [akhil368](https://akhil368.github.io)
 
-[Linkedin](https://www.linkedin.com/in/akhil-suryan-1b9367239?original_referer=)
+[akhil368](https://www.linkedin.com/in/akhil-suryan-1b9367239?original_referer=)
  
 
 Akhil is a recent graduate who completed his Bachelor of Computer Applications (BCA) degree in 2021. He has since embarked on a career in the field of software development and is currently pursuing a course in back end development from Masai School.
