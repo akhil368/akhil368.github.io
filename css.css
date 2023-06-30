@@ -726,7 +726,10 @@ span {
 .home-img {
   width: 70vw;
   margin-top: 4rem;
+  /* border:50px solid black; */
+
 }
+
 .about {
   flex-direction: column-reverse;
 } 
