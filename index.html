@@ -1,383 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akhil Suryan | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akhil Suryan - Portfolio</title>
-  <meta name="title" content="Akhil-Portfolio" />
-  <meta name="description" />
-
-  <!-- Github Calender -->
-  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-
-  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" /><!-- 
-
-  <---- box icon -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./css.css">
-  <!-- 
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./images/profile-img.png" />
-  <link rel="preload" as="image" href="./images/pattern-2.svg" />
-  <link rel="preload" as="image" href="./images/pattern-3.svg" />
-
-  <link rel="shortcut icon" href="./images/img_56497.webp" type="image/x-icon">
-</head>
-
-<body id="top">
-
-  <!-- ****************************************  ** Navbar  **  *************************************************** -->
-
-  <header class="header">
-    <a href="#" class="logo">Akhil</a>
-    <i class='bx bx-menu' id="menu-icon"></i>
-
+  <body>
+    <!-- Navbar -->
     <nav id="nav-menu">
-
-      <a class="nav-link home" href="#home">Home</a>
-      <a class="nav-link about" href="#about">About</a>
-      <a class="nav-link skills" href="#skills">Skills</a>
-      <a class="nav-link projects" href="#projects">Projects</a>
-      <a class="nav-link contact" href="#contact">Contact</a>
-
-      <li id="resume-button-1" class="nav-link resume">
-        <a href="./Akhil-Suryan-Resume.pdf" target="_blank" id="resume-link-1"
-          download="Akhil-Portfolio-Resume">Resume
-          <i class='bx bxs-download'></i></a>
-      </li>
-
-    </nav>
-  </header>
-  <!-- ****************************************  ** Navbar Ends **  *************************************************** -->
-
-
-
-  <!-- ****************************************  ** Home Section **  *************************************************** -->
-
-  <section class="home" id="home">
-
-    <div class="home-overlay">
-      <div class="home-content">
-        <h3>Hello, I'm</h3>
-  
-        <h1 id="user-detail-name">Akhil Suryan</h1>
-        <br>
-        <h3>A <span class="multiple-text"></span></h3>
-  
-        <div class="social-media">
-          <a href="https://github.com/akhil368"><i class='bx bxl-github'></i></a>
-          <a href="https://www.linkedin.com/in/akhil-suryan-1b9367239/"><i class='bx bxl-linkedin'></i></a>
-        </div>
-  
-        <li id="resume-button-2">
-          <a href="./Akhil-Suryan-Resume.pdf" target="_blank" id="resume-link-2" class="button"
-            download="Akhil-Suryan-Resume">Resume <i class='bx bxs-download'></i></a>
-        </li>
-  
-      </div>
-  
-      <div class="home-image">
-        <img style="border-radius: 50%;" width="400" class="home-img" src="./profile.jpg" alt="profile-pic" />
-  
-        <img src="./images/pattern-2.svg" width="27" height="26" alt="shape" class="shape shape-1" />
-  
-        <img src="./images/pattern-3.svg" width="27" height="26" alt="shape" class="shape shape-2" />
-      </div>
-    </div>
-
-
-    <img src="./images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1" />
-
-    <img src="./images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2" />
-    </div>
-  </section>
-  <!-- *****************************************  ** Home Section Ends **  ***************************************************** -->
-
-
-  <!-- ****************************************  ** About Section **  *************************************************** -->
-
-  <section id="about" class="about section">
-
-    <h2 class="heading"><i class='bx bx-user'></i>About
-      <span>Me!</span>
-      <div class="about-content">
-        <h3>I'm <span>Akhil</span></h3>
-        <h3>Backend Web Developer</h3>
-        <p id="user-detail-intro">
-          I'm a Java Backend developer with proficiency in SQL. I possess a
-                keen interest in Data Structures and Algorithms and I'm enthusiastic about
-                exploring new technologies. I'm also Interested in developing scalable and
-                efficient applications using modern software development practices.
-        </p>
-
-      </div>
-  </section>
-
-  <!-- *************************************  ** About Section End **  *********************************************************** -->
-
-
-  <!--------------------------------------------- skills start------------------------------------------------------------->
-  <section id="skills" class="skills">
-    <div class="container tags">
-      <h2 class="heading">Skills &
-        <span>Abilities</span>
-      </h2>
-
-      <ul class="grid-list">
-
+      <div class="menu-toggle">&#9776;</div>
+      <ul>
+        <li><a href="#home" class="nav-link home">Home</a></li>
+        <li><a href="#about" class="nav-link about">About</a></li>
+        <li><a href="#skills" class="nav-link skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link contact">Contact</a></li>
         <li>
-          <button class="skills-card tag-btn">
-            <img src="./images/java.svg" width="32" height="32"
-              loading="lazy" class="skills-card-img" />
-
-            <p class="skills-card-name">Java</p>
-          </button>
+          <a
+            href="./Akhil-Suryan-Resume.pdf"
+            target="_blank"
+            download
+            class="nav-link resume"
+            onclick="resume()"
+            id="resume-button-1"
+            >Resume</a
+          >
         </li>
-
-        <li>
-          <button class="skills-card tag-btn">
-            <img class="skills-card-img"
-              src="./images/sql.svg" width="32" height="32"
-              loading="lazy" />
-
-            <p class="skills-card-name">SQL</p>
-          </button>
-        </li>
-
-        <li>
-          <button class="skills-card tag-btn">
-            <img src="./images/hibernate.svg" width="32" height="32"
-              loading="lazy" class="skills-card-img" />
-
-            <p class="skills-card-name">Hibernate</p>
-          </button>
-        </li>
-
-        <li>
-          <button class="skills-card tag-btn">
-            <img src="./images/git.svg" width="32" height="32"
-              loading="lazy" class="skills-card-img" />
-
-            <p class="skills-card-name">GIT</p>
-          </button>
-        </li>
-
-        <li>
-          <button class="skills-card tag-btn">
-            <img src="./images/html.svg" class="skills-card-img" width="32" height="32" loading="lazy" alt="HTML" />
-
-            <p class="skills-card-name">HTML</p>
-          </button>
-        </li>
-
-        <li>
-          <button class="skills-card tag-btn">
-            <img src="./images/css.svg" class="skills-card-img" width="32" height="32" loading="lazy" alt="CSS" />
-
-            <p class="skills-card-name">CSS</p>
-          </button>
-        </li>
-
-        <li>
-          <button class="skills-card tag-btn">
-            <img src="./images/javascript.svg"
-              class="skills-card-img" width="32" height="32" loading="lazy" alt="JavaScript" />
-
-            <p class="skills-card-name">JavaScript</p>
-          </button>
-        </li>
-
-      
-
-    
-
       </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+      <img src="./img/akhil_photo.jpg" alt="Professional Photo" class="home-img" />
+      <div class="desc">
+        <h2 id="user-detail-name">Akhil Suryan Sharma</h2>
+        <p id="user-detail-intro">An enthusiastic backend developer proficient in a range of technologies, like...
+          <span id="typed-text"></span>
+        </p>
+        <button id="resume-button-2">
+          <a
+            href="./Akhil-Suryan-Resume.pdf"
+            target="_blank"
+            onclick="resume()"
+            id="resume-link-2"
+            >Resume</a
+          >
+        </button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <div class="about-skills">
+      <section id="about" class="about section">
+        <h2 class="section-header">About me</h2>
+          A diligent Java Backend Developer, I bring to the table more than 1200 hours of hands-on coding expertise, honed through rigorous practice and real-world experience. My comprehensive understanding of Java and its associated technologies positions me as a dependable expert in backend development.
+          <br/>
+          Whether working solo or in team-based collaborative environments, I have consistently demonstrated the ability to craft well-architected, efficient, and scalable applications. These projects range from small utilities to more complex, integrated systems, showcasing my adaptability and growth in the craft.
+          <br/>
+          As I look forward, I am enthusiastic about leveraging my expertise in dynamic development environments. My commitment to continuous learning and passion for Java makes me an ideal fit for fast-paced, innovative settings.
+        </p>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <div class="skills-card">
+          <h2 class="section-header">Skills</h2>
+          <div class="skill-section">
+            <div class="one-skill">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
+                alt="Skill Image"
+                class="skills-card-img"
+              />
+              <p class="skills-card-name">HTML</p>
+            </div>
+            <div class="one-skill">
+              <img
+                src="https://camo.githubusercontent.com/edc736634dd35b0f4008e2f7db456136b9fc0e1e7a4078bb72c7352b1bdf8a7e/68747470733a2f2f776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f6373732d332e737667"
+                alt="Skill Image"
+                class="skills-card-img"
+              />
+              <p class="skills-card-name">CSS</p>
+            </div>
+            <div class="one-skill">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                alt="Skill Image"
+                class="skills-card-img"
+              />
+              <p class="skills-card-name">JavaScript</p>
+            </div>
+            <div class="one-skill">
+              <img
+                src="https://cdn.icon-icons.com/icons2/2415/PNG/512/java_original_wordmark_logo_icon_146459.png"
+                alt="Skill Image"
+                class="skills-card-img"
+              />
+              <p class="skills-card-name">JAVA</p>
+            </div>
+            <div class="one-skill">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2306/2306173.png"
+                alt="Skill Image"
+                class="skills-card-img"
+              />
+              <p class="skills-card-name">SQL</p>
+            </div>
+            <div class="one-skill">
+              <img
+                src="./img/hibernate.png"
+                alt="Skill Image"
+                class="skills-card-img"
+              />
+              <p class="skills-card-name">Hibernate</p>
+            </div>
+            <div class="one-skill">
+              <img
+                src="https://static-00.iconduck.com/assets.00/github-icon-2048x1988-jzvzcf2t.png"
+                alt="Skill Image"
+                class="skills-card-img"
+              />
+              <p class="skills-card-name">GitHub</p>
+            </div>
+            <div class="one-skill">
+              <img
+                src="https://ph-files.imgix.net/3f458a19-f754-4e09-8aa5-351c3a45dc38.png?auto=format"
+                alt="Skill Image"
+                class="skills-card-img"
+              />
+              <p class="skills-card-name">Thunder Client</p>
+            </div>
+            <div class="one-skill">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
+                alt="Skill Image"
+                class="skills-card-img"
+              />
+              <p class="skills-card-name">VS Code</p>
+            </div>
+            <div class="one-skill">
+              <img
+                src="./img/spring.svg"
+                alt="Skill Image"
+                class="skills-card-img"
+              />
+              <p class="skills-card-name">Spring</p>
+            </div>
+            <div class="one-skill">
+              <img
+                src="./img/springboot.png"
+                alt="Skill Image"
+                class="skills-card-img"
+              />
+              <p class="skills-card-name">Spring Boot</p>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat skill cards as needed -->
+      </section>
     </div>
 
-  </section>
-
-  <!--------------------------------------------- skills ends ---------------------------------------------------------------->
-
-
-
-  <!-------------------------------------------- Project Starts--------------------------------------------------------------->
-
-
-  <section class="project" id="projects">
-    <h2 class="heading">My
-      <span>Projects</span>
-    </h2>
-    <div class="project-container">
+    <!-- Projects Section -->
+    <section id="projects">
       <div class="project-card">
-        <img src="./images/startingline.png" alt="">
-        <div class="project-layer">
-          <h4 class="project-title">Finish Line Clone</h4>
-          <p class="project-description"> Finish Line is an American retail chain that sells athletic shoes and related
-            apparel and accessories owned by JD Sports.</p>
-          <h5 class="project-tech-stack">JavaScript | HTML | CSS</h5>
-          <div class="projectlinks">
-            <a href="https://github.com/abhirupbakshi/MasaiSchool-CW-17-1-23-finishline.com" class="project-github-link"><i
-                class='bx bxl-github'></i></a>
-            <a href="https://stirring-griffin-705e95.netlify.app/" class="project-deployed-link"><i
-                class='bx bxl-netlify'></i></a>
+        <div class="project-image">
+          <img src="./img/E-Power.jpg" alt="Project Image" />
+        </div>
+        <div class="project-desc">
+          <h3 class="project-title">
+            Electricity Management System
+          </h3>
+          <p class="project-description">
+            An Electricity Management System is a robust software solution developed using Java, Hibernate, and SQL technologies. This system efficiently manages and monitors electricity-related data and operations.
+            This Electricity Management System streamlines tasks such as meter reading, billing, and outage management, making it an indispensable tool for utility companies and organizations looking to enhance their electricity management capabilities.
+          </p>
+          <p class="project-tech-stack">
+            Tech Stack: Core Java, Hibernate, JDBC, MySQL
+          </p>
+          <div class="project-links">
+            <a
+              href="https://github.com/akhil368/boundless-sleep-6032.git"
+              class="project-github-link"
+              target="_blank"
+    rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i> GitHub Repo</a
+            >
+            <a
+              href="https://github.com/akhil368/boundless-sleep-6032.git"
+              class="project-deployed-link"
+              target="_blank"
+    rel="noopener noreferrer"
+              ><i class="fa-solid fa-globe"></i> Deployed Link</a
+            >
           </div>
         </div>
       </div>
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
+      </div>
       <div class="project-card">
-        <img src="./images/startingline.png" alt="">
-        <div class="project-layer">
-          <h4 class="project-title">Finish Line Clone</h4>
-          <p class="project-description"> Finish Line is an American retail chain that sells athletic shoes and related
-            apparel and accessories owned by JD Sports.</p>
-          <h5 class="project-tech-stack">JavaScript | HTML | CSS</h5>
-          <div class="projectlinks">
-            <a href="https://github.com/abhirupbakshi/MasaiSchool-CW-17-1-23-finishline.com" class="project-github-link"><i
-                class='bx bxl-github'></i></a>
-            <a href="https://stirring-griffin-705e95.netlify.app/" class="project-deployed-link"><i
-                class='bx bxl-netlify'></i></a>
+        <div class="project-image">
+          <img src="./img/Ace_interbiew.png" alt="Project Image" />
+        </div>
+        <div class="project-desc">
+          <h3 class="project-title">
+            Ace Interview 
+          </h3>
+          <p class="project-description">
+            The AI Interviewer Assistant (Ace-Interview) is an innovative application designed to empower students and job seekers in their journey to excel in interviews, preparing for your first job interview or a seasoned professional aiming to ace your dream job interview, this project is here to assist you every step of the way.
+            
+          </p>
+          <p class="project-tech-stack">
+            Tech Stack: React, TypeScript, Tailwind CSS, OpenAI API, Java Spring Boot, MySQL
+          </p>
+          <div class="project-links">
+            <a
+              href="https://github.com/akhil368/ace-interview.git"
+              class="project-github-link"
+              target="_blank"
+    rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i> GitHub Repo</a
+            >
+            <a
+              href="https://github.com/akhil368/ace-interview.git"
+              class="project-deployed-link"
+              target="_blank"
+    rel="noopener noreferrer"
+              ><i class="fa-solid fa-globe"></i> Deployed Link</a
+            >
           </div>
         </div>
       </div>
-
+      </div>
       <div class="project-card">
-        <img src="./images/startingline.png" alt="">
-        <div class="project-layer">
-          <h4 class="project-title">Finish Line Clone</h4>
-          <p class="project-description"> Finish Line is an American retail chain that sells athletic shoes and related
-            apparel and accessories owned by JD Sports.</p>
-          <h5 class="project-tech-stack">JavaScript | HTML | CSS</h5>
-          <div class="projectlinks">
-            <a href="https://github.com/abhirupbakshi/MasaiSchool-CW-17-1-23-finishline.com" class="project-github-link"><i
-                class='bx bxl-github'></i></a>
-            <a href="https://stirring-griffin-705e95.netlify.app/" class="project-deployed-link"><i
-                class='bx bxl-netlify'></i></a>
+        <div class="project-image">
+          <img src="./img/cab.jpg" alt="Project Image" />
+        </div>
+        <div class="project-desc">
+          <h3 class="project-title">
+            Coober - Online Cab Booking Application
+          </h3>
+          <p class="project-description">
+            This project is an online cab booking application built with Spring Boot. It provides a platform for customers to book cabs, track their ride, and provide feedback which can be reviewed by our dedicated support team. It uses JPA for data persistence, MySQL for the database, and includes validation and web functionalities. The project also employs Lombok to minimize boilerplate code.
+          </p>
+          <p class="project-tech-stack">
+            Tech Stack: Java, MySQL, Spring Boot, Spring Boot Validation, Spring Data JPA
+          </p>
+          <div class="project-links">
+            <a
+              href="https://github.com/akhil368/Coober.git"
+              class="project-github-link"
+              target="_blank"
+    rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i> GitHub Repo</a
+            >
+            <a
+              href="https://github.com/akhil368/Coober.git"
+              class="project-deployed-link"
+              target="_blank"
+    rel="noopener noreferrer"
+              ><i class="fa-solid fa-globe"></i> Deployed Link</a
+            >
           </div>
         </div>
       </div>
-
+      </div>
       <div class="project-card">
-        <img src="./images/startingline.png" alt="">
-        <div class="project-layer">
-          <h4 class="project-title">Finish Line Clone</h4>
-          <p class="project-description"> Finish Line is an American retail chain that sells athletic shoes and related
-            apparel and accessories owned by JD Sports.</p>
-          <h5 class="project-tech-stack">JavaScript | HTML | CSS</h5>
-          <div class="projectlinks">
-            <a href="https://github.com/abhirupbakshi/MasaiSchool-CW-17-1-23-finishline.com" class="project-github-link"><i
-                class='bx bxl-github'></i></a>
-            <a href="https://stirring-griffin-705e95.netlify.app/" class="project-deployed-link"><i
-                class='bx bxl-netlify'></i></a>
+        <div class="project-image">
+          <img src="./img/Batch.png" alt="Project Image" />
+        </div>
+        <div class="project-desc">
+          <h3 class="project-title">
+           Batch Management System (TeachTrack)
+          </h3>
+          <p class="project-description">
+            A Batch Management System developed using Core Java and file handling is a software application designed to automate and streamline the execution of batch processes and tasks. This system leverages the Core Java programming language and file handling capabilities to efficiently manage the processing of large volumes of data or repetitive tasks.
+          </p>
+          <p class="project-tech-stack">
+            Tech Stack: Java, File Handling
+          </p>
+          <div class="project-links">
+            <a
+              href="https://github.com/akhil368/-numerous-bee-5463.git"
+              class="project-github-link"
+              target="_blank"
+    rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i> GitHub Repo</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1i4Uz44BYomVgTpjSSIzosZuEWoYm8Bdt/view"
+              class="project-deployed-link"
+              target="_blank"
+    rel="noopener noreferrer"
+              ><i class="fa-solid fa-globe"></i> Deployed Link</a
+            >
           </div>
         </div>
       </div>
-    </div>
-    </div>
-  </section>
-  <!-------------------------------------------- Project Ends--------------------------------------------------------------->
+      </div>
+      </div>
 
+      <!-- Repeat project cards as needed -->
+    </section>
 
-
-  <!-------------------------------------------- GitHub starts ------------------------------------------------------------->
-
-  <div id="github-stats">
-    <h2 class="heading">GitHub
-      <span class="span">Statistics</span>
-    </h2>
-    <div class="container">
-
-      <div>
-        <div class="react-activity-calendar calendar">
-          Loading the data just for you.
-        </div>
-        <br />
-        <div class="stats">
-          <a href="https://github.com/akhil368">
-            <img id="github-streak-stats"
-              src="https://github-readme-streak-stats.herokuapp.com/?user=akhil368&theme=black-ice&hide_border=true&stroke=0000&background=060A0CD0"
-              alt="" />
-            <br />
-            <br />
-
-            <img id="github-stats-card"
-              src="https://github-readme-stats.vercel.app/api?username=akhil368&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" />
-
-            <br />
-            <br />
-
+    <!-- GitHub Section -->
+    <section id="github-sec">
+      <div class="github react-activity-calendar">
+        <h2 class="section-header">GitHub Statistics</h2>
+        <div class="git-items">
+          <div class="github-stats">
+            <a href="https://github.com/akhil368/" target="_blank"
+              ><img
+                id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=akhil368&show_icons=true&theme=gotham"
+            /></a>
+            <a href="https://github.com/akhil368/" target="_blank"
+              ><img
+                id="github-streak-stats"
+                src="https://github-readme-streak-stats.herokuapp.com?user=akhil368&theme=gotham&hide_border=false"
+            /></a>
+            <a href="https://github.com/akhil368/" target="_blank"
+              ><img
+                id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=akhil368&layout=compact&theme=gotham"
+            /></a>
+          </div>
+          <div
+            id="git-stats-calender"
+            class="stats_card react-activity-calendar"
+          >
             <img
-              src="https://github-readme-stats.vercel.app/api/top-langs?username=akhil368&show_icons=true&locale=en&layout=compact&theme=react&hide_border=true&bg_color=0D1117"
-              id="github-top-langs" />
+              src="https://ghchart.rshah.org/akhil368"
+              alt=" Github chart"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-header" style="align-self: flex-start">Contact Me</h2>
+      <p class="wc-msg">
+        Hey! If you're intrigued by what I've done, I'm just a message away. Connect the way you like!
+      </p>
+      <div class="contact-div">
+        <div class="contact-links">
+          <a href="https://github.com/akhil368" id="contact-github"
+            ><i class="fa-brands fa-github"></i>GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/akhil-suryan-1b9367239"
+            id="contact-linkedin"
+            ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+          >
+          <a id="contact-phone" href="tel:+919654392253">
+            <i class="fa-solid fa-phone"></i>+91 9654392253
+          </a>
+          <a id="contact-email" href="mailto:>akhil.suryan.18@gmail.com">
+            <i class="fa-solid fa-at"></i>akhil.suryan.18@gmail.com
           </a>
         </div>
+        <form class="contact-form">
+          <label>Name<input type="text" placeholder="Full Name" /></label>
+          <label>Email<input type="text" /></label>
+          <label>Phone<input type="text" /></label>
+          <label>Message<textarea type="text" rows="10"></textarea></label>
+          <button>Submit</button>
+        </form>
       </div>
-    </div>
-  </div>
-
-  <!--------------------------------------------  Contacts Starts --------------------------------------------------------------->
-
-  <div id="contact">
-    <h2 class="heading">Contact
-      <span>Me</span>
-    </h2>
-    <div class="contact_me">
-      <p id="contact-phone">Contact Number: +91 9654392253</p>
-      <p>
-      <p id="contact-email"> <a href="mailto:akhil.suryan.18@gmail.com"></a>
-        Email Address: akhil.suryan.18@gmail.com
-      </p>
-      </p>
-      <p>Address: New Delhi, India</p>
-
-      <div>
-        <a class="project-link linkdk" id="contact-linkedin" target="_blank"
-          href="https://www.linkedin.com/in/akhil-suryan-1b9367239/"><i style="font-size: 40px" class='bx bxl-linkedin'
-            aria-hidden="true"></i></a>
-
-        <a class="project-link linkd" id="contact-github" target="_blank"
-          href="https://github.com/akhil368/"><i style="font-size: 40px" class='bx bxl-github'
-            aria-hidden="true"></i></a>
-
-        <a class="project-link linkd" href="mailto:akhil.suryan.18@gmail.com" target="_blank"><i
-            style="font-size: 40px" class='bx bx-envelope' aria-hidden="true"></i></a>
-      </div>
-    </div>
-  </div>
-
-  <!--------------------------------------------  Contacts Ends --------------------------------------------------------------->
-
-  <!-- scrollreveal -->
-
-  <script src="https://unpkg.com/scrollreveal"></script>
-
-  <!-- Typed js -->
-  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-
-  <!-- Main Script -->
+    </section>
+    <!-- Footer -->
+    <footer>
+      <section class="end">
+          <div class="last-text">
+              <p>Made with ❤️ by © Akhil Suryan</p>
+          </div>
+      </section>
+    </footer>
+  </body>
+  <script>
+    var typed = new Typed('#typed-text', {
+      strings: ['JAVA','JavaScript','MySQL','Spring','Spring Boot','HTML','CSS'],
+      typeSpeed: 200,
+      loop: true,
+    });
+    function resume() {
+      window.open(
+        'https://drive.google.com/file/d/1wY9a3dxrMs_uvhgn9pgrtXEIt5xyDCMb/view?usp=drive_link'
+      );
+    }
+  </script>
   <script src="script.js"></script>
-
-
-</body>
-
 </html>
